@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common 2D Array Algorithms</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://teacher-utils.netlify.app/teacher-tests.js"></script>
+
+    <script src="loops.js"></script>
+    <script src="helper.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+    <h1>Common 2D Array For Loop Algorithms</h1>
+    <div id="all-tasks">
+
+        <div class="task">
+            <h2>Matrix Summation</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Iterate through each row and column, adding all values to a running
+                total.</p>
+            <p><span class="output">Output</span>: total sum of all numbers in the matrix</p>
+            <code id="matrixSum" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-matrixSum">Run Tests</button>
+                <div id="matrixSum-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Row Sum</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: For each row, calculate the sum of its elements and store it in a
+                new array.</p>
+            <p><span class="output">Output</span>: a 1D array where each element is the sum of a row</p>
+            <code id="rowSum" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-rowSum">Run Tests</button>
+                <div id="rowSum-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Column Sum</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: For each column, add up all values from top to bottom.</p>
+            <p><span class="output">Output</span>: a 1D array where each element is the sum of a column</p>
+            <code id="colSum" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-colSum">Run Tests</button>
+                <div id="colSum-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Count Instances (Zeros)</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Traverse all elements and count how many values are equal to zero.
+            </p>
+            <p><span class="output">Output</span>: number of zero values in the matrix</p>
+            <code id="countZeros" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-countZeros">Run Tests</button>
+                <div id="countZeros-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Minimum Value</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Compare each element to find the smallest value in the entire
+                array.</p>
+            <p><span class="output">Output</span>: smallest number in the array</p>
+            <code id="min2D" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-min2D">Run Tests</button>
+                <div id="min2D-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Maximum Value</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Compare each element to find the largest value in the entire array.
+            </p>
+            <p><span class="output">Output</span>: largest number in the array</p>
+            <code id="max2D" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-max2D">Run Tests</button>
+                <div id="max2D-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Transformation (Double Values)</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Create a new 2D array where each value is twice that of the
+                original array.</p>
+            <p><span class="output">Output</span>: new 2D array of doubled values</p>
+            <code id="double2D" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-double2D">Run Tests</button>
+                <div id="double2D-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Boolean Filter (Positive Map)</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Create a new 2D array where each cell is true if the original value
+                is positive and false otherwise.</p>
+            <p><span class="output">Output</span>: new 2D array of booleans</p>
+            <code id="positiveMap" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-positiveMap">Run Tests</button>
+                <div id="positiveMap-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Diagonal Sum</h2>
+            <p><span class="input">Input</span>: A square 2D array of integers.</p>
+            <p><span class="process">Process</span>: Add all elements where the row index equals the column index.</p>
+            <p><span class="output">Output</span>: sum of the main diagonal</p>
+            <code id="diagSum" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-diagSum">Run Tests</button>
+                <div id="diagSum-results" class="results"></div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Transpose Matrix</h2>
+            <p><span class="input">Input</span>: A 2D array of integers.</p>
+            <p><span class="process">Process</span>: Create a new 2D array where rows become columns and columns become
+                rows.</p>
+            <p><span class="output">Output</span>: the transposed matrix</p>
+            <code id="transpose" class="language-javascript"></code>
+            <div class="tests">
+                <button id="test-transpose">Run Tests</button>
+                <div id="transpose-results" class="results"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
